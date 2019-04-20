@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:padding="30dp" android:background="@color/spa">
+
+
+    <RelativeLayout android:id="@+id/layoutStatus"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <ImageView android:id="@+id/live1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_live"
+                   android:tint="@color/red"/>
+
+        <ImageView android:id="@+id/live2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_live"
+                   android:tint="@color/red"
+                   android:layout_toRightOf="@id/live1"/>
+
+        <ImageView android:id="@+id/live3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_live"
+                   android:tint="@color/red"
+                   android:layout_toRightOf="@id/live2"/>
+
+        <TextView android:id="@+id/textPoints"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="0 Pontos"
+                  android:textColor="@color/white"
+                  android:textSize="18sp"
+                  android:textStyle="bold"
+                  android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/layoutQuestion"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_centerHorizontal="true"
+                  android:background="@drawable/rounded_text_question"
+                  android:layout_below="@id/layoutStatus"
+                  android:layout_marginTop="50dp">
+
+        <TextView android:id="@+id/textQuestion"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="2 X 2"
+                  android:textSize="28sp"
+                  android:layout_margin="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/layoutAnswer"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_below="@id/layoutQuestion"
+                  android:layout_marginTop="50dp">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <Button android:id="@+id/buttonAnswer1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textSize="28sp"
+                    android:background="@drawable/rounded_button"/>
+
+            <Button android:id="@+id/buttonAnswer2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textSize="28sp"
+                    android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <Button android:id="@+id/buttonAnswer3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textSize="28sp"
+                    android:background="@drawable/rounded_button"/>
+
+            <Button android:id="@+id/buttonAnswer4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textSize="28sp"
+                    android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

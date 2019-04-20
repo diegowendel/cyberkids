@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Outras cores -->
+    <color name="transparent">#0000</color>
+    <color name="white">#fff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0099cc</color>
+    <color name="light_blue">#66d9ff</color>
+    <color name="red">#f00</color>
+    <color name="green">#0f0</color>
+    <color name="gray">#eee</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="refresh_progress_1">#33B5E5</color>
+    <color name="refresh_progress_2">#99CC00</color>
+    <color name="refresh_progress_3">#CC0000</color>
+    <color name="red_button">#CD5C5C</color>
+    <color name="light_orange">#ffa64d</color>
+    <color name="orange">#ff8000</color>
+    <color name="colorLink">#1ea4f7</color>
+    <color name="colorCAB">#AED581</color>
+    <color name="brown">#4e342e</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="pi">#474746</color>
+    <color name="abobora">#C28B4D</color>
+    <color name="spa">#3AAE68</color>
+</resources>
