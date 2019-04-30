@@ -3,7 +3,6 @@
               android:layout_width="match_parent" android:layout_height="match_parent"
               android:padding="30dp" android:background="@color/spa">
 
-
     <RelativeLayout android:id="@+id/layoutStatus"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
@@ -33,7 +32,7 @@
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:text="0 Pontos"
-                  android:textColor="@color/white"
+                  android:textColor="@color/oil"
                   android:textSize="18sp"
                   android:textStyle="bold"
                   android:layout_alignParentRight="true"/>
@@ -43,17 +42,28 @@
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:orientation="horizontal"
-                  android:layout_centerHorizontal="true"
-                  android:background="@drawable/rounded_text_question"
                   android:layout_below="@id/layoutStatus"
                   android:layout_marginTop="50dp">
 
+        <ImageView android:id="@+id/mascote"
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:layout_height="100dp"
+                   android:src="@drawable/mascote"
+                   android:layout_below="@+id/layoutStatus"
+                   android:layout_alignTop="@id/layoutQuestion"/>
+
         <TextView android:id="@+id/textQuestion"
-                  android:layout_width="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="3"
                   android:layout_height="wrap_content"
                   android:text="2 X 2"
+                  android:textAlignment="center"
                   android:textSize="28sp"
-                  android:layout_margin="20dp"/>
+                  android:textColor="@color/oil"
+                  android:padding="30dp"
+                  android:layout_gravity="center_horizontal"
+                  android:background="@drawable/rounded_text_question"/>
     </LinearLayout>
 
     <LinearLayout android:id="@+id/layoutAnswer"
@@ -73,6 +83,7 @@
                     android:layout_weight="1"
                     android:layout_margin="5dp"
                     android:textSize="28sp"
+                    android:textColor="@color/oil"
                     android:background="@drawable/rounded_button"/>
 
             <Button android:id="@+id/buttonAnswer2"
@@ -81,6 +92,7 @@
                     android:layout_weight="1"
                     android:layout_margin="5dp"
                     android:textSize="28sp"
+                    android:textColor="@color/oil"
                     android:background="@drawable/rounded_button"/>
         </LinearLayout>
 
@@ -94,6 +106,7 @@
                     android:layout_weight="1"
                     android:layout_margin="5dp"
                     android:textSize="28sp"
+                    android:textColor="@color/oil"
                     android:background="@drawable/rounded_button"/>
 
             <Button android:id="@+id/buttonAnswer4"
@@ -102,6 +115,7 @@
                     android:layout_weight="1"
                     android:layout_margin="5dp"
                     android:textSize="28sp"
+                    android:textColor="@color/oil"
                     android:background="@drawable/rounded_button"/>
         </LinearLayout>
     </LinearLayout>

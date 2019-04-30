@@ -1,16 +1,20 @@
 package diegowendel.github.io.cyberkids
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.media.MediaPlayer
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.support.v4.content.ContextCompat
+import android.support.v7.app.AlertDialog
+import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import kotlin.random.Random
 
-class MainActivity : AppCompatActivity() {
+class TabuadaActivity : AppCompatActivity() {
 
     // View components
     private lateinit var buttonAnswer1:Button
@@ -39,6 +43,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        factor1 = intent.getIntExtra("tabuada", 1)
+
         // App
         setupComponents()
         setNumbers()
@@ -63,12 +69,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setNumbers() {
-        factor1 = getRandomNumber()
-        factor2 = getRandomNumber()
         val correctAlternative = factor1 * factor2
         alternatives = mutableSetOf(correctAlternative)
         while (alternatives.size < 4) {
-            alternatives.add(getRandomNumber(until = 100))
+            alternatives.add(getRandomNumber(until = factor1*10))
         }
         var alternativesShuffled = alternatives.shuffled()
         buttonAnswer1.text = "${alternativesShuffled[0]}"
@@ -89,6 +93,10 @@ class MainActivity : AppCompatActivity() {
             soundCorrect.start()
             points += 10
             textPoints.text = "${points} Pontos"
+            factor2++
+            if (factor2 > 2) {
+                showDialogVictory()
+            }
             Handler().postDelayed({ setNumbers() }, 1000)
         } else {
             button.setBackgroundResource(R.drawable.rounded_button_error)
@@ -100,9 +108,42 @@ class MainActivity : AppCompatActivity() {
                 live2.setColorFilter(ContextCompat.getColor(this, R.color.black))
             } else {
                 live1.setColorFilter(ContextCompat.getColor(this, R.color.black))
+                showDialogGameOver()
             }
         }
     }
 
     fun getRandomNumber(from: Int = 1, until: Int = 10) = Random.nextInt(from, until)
+
+    fun showDialogGameOver() {
+        val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_game_over, null)
+        val builder = AlertDialog.Builder(this).setView(dialogView)
+        val dialog = builder.show()
+        dialog.window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog.setCanceledOnTouchOutside(false)
+        dialog.findViewById<Button>(R.id.buttonTryAgain)?.setOnClickListener {
+            setNumbers()
+            factor2 = 1
+            lives = 3
+            live1.setColorFilter(ContextCompat.getColor(this, R.color.red))
+            live2.setColorFilter(ContextCompat.getColor(this, R.color.red))
+            live3.setColorFilter(ContextCompat.getColor(this, R.color.red))
+            dialog.dismiss()
+        }
+    }
+
+    fun showDialogVictory() {
+        val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_victory, null)
+        val builder = AlertDialog.Builder(this).setView(dialogView)
+        val dialog = builder.show()
+        dialog.window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog.setCanceledOnTouchOutside(false)
+        dialog.findViewById<Button>(R.id.buttonMenu)?.setOnClickListener {
+            finish()
+        }
+
+        dialog.findViewById<Button>(R.id.buttonNext)?.setOnClickListener {
+
+        }
+    }
 }
