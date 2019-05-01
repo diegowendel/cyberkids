@@ -12,6 +12,7 @@ import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import diegowendel.github.io.cyberkids.utils.PreferenceUtils
 import kotlin.random.Random
 
 class TabuadaActivity : AppCompatActivity() {
@@ -94,10 +95,11 @@ class TabuadaActivity : AppCompatActivity() {
             points += 10
             textPoints.text = "${points} Pontos"
             factor2++
-            if (factor2 > 2) {
+            if (factor2 > 10) {
                 showDialogVictory()
+            } else {
+                Handler().postDelayed({ setNumbers() }, 500)
             }
-            Handler().postDelayed({ setNumbers() }, 1000)
         } else {
             button.setBackgroundResource(R.drawable.rounded_button_error)
             soundError.start()
@@ -122,12 +124,14 @@ class TabuadaActivity : AppCompatActivity() {
         dialog.window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         dialog.setCanceledOnTouchOutside(false)
         dialog.findViewById<Button>(R.id.buttonTryAgain)?.setOnClickListener {
-            setNumbers()
             factor2 = 1
+            points = 0
             lives = 3
             live1.setColorFilter(ContextCompat.getColor(this, R.color.red))
             live2.setColorFilter(ContextCompat.getColor(this, R.color.red))
             live3.setColorFilter(ContextCompat.getColor(this, R.color.red))
+            textPoints.text = "${points} Pontos"
+            setNumbers()
             dialog.dismiss()
         }
     }
@@ -138,12 +142,12 @@ class TabuadaActivity : AppCompatActivity() {
         val dialog = builder.show()
         dialog.window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         dialog.setCanceledOnTouchOutside(false)
+
+        // Nível concluído
+        PreferenceUtils.setBoolean(this,"tabuada-${factor1}", true)
+
         dialog.findViewById<Button>(R.id.buttonMenu)?.setOnClickListener {
             finish()
-        }
-
-        dialog.findViewById<Button>(R.id.buttonNext)?.setOnClickListener {
-
         }
     }
 }

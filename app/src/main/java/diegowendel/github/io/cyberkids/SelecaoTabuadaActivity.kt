@@ -1,18 +1,33 @@
 package diegowendel.github.io.cyberkids
 
 import android.content.Intent
+import android.media.Image
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.Button
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import diegowendel.github.io.cyberkids.utils.PreferenceUtils
 
 class SelecaoTabuadaActivity : AppCompatActivity() {
 
-    private lateinit var buttons:Array<Button>
+    private lateinit var buttons:Array<ViewGroup>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_selecao_tabuada)
         setupComponents()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        buttons.forEach { button ->
+            val tabuada = (button.getChildAt(1) as TextView).text.toString().toInt()
+            val isConcluido = PreferenceUtils.getBoolean(this,"tabuada-${tabuada}")
+            if (isConcluido) {
+                (button.getChildAt(0) as ImageView).setImageResource(R.drawable.diamond_emoji)
+            }
+        }
     }
 
     fun setupComponents() {
@@ -28,7 +43,11 @@ class SelecaoTabuadaActivity : AppCompatActivity() {
             findViewById(R.id.button10))
 
         buttons.forEach { button ->
-            val tabuada = button.text.toString().toInt()
+            val tabuada = (button.getChildAt(1) as TextView).text.toString().toInt()
+            val isConcluido = PreferenceUtils.getBoolean(this,"tabuada-${tabuada}")
+            if (isConcluido) {
+                (button.getChildAt(0) as ImageView).setImageResource(R.drawable.diamond_emoji)
+            }
             button.setOnClickListener{ onClickButtonSelecao(tabuada) }
         }
     }
