@@ -42,13 +42,13 @@
                             android:focusable="true"
                             android:background="@drawable/rounded_button">
 
-                <ImageView android:id="@+id/imageButton1"
-                           android:layout_width="35dp"
-                           android:layout_height="35dp"
-                           android:layout_alignParentLeft="true"
-                           android:layout_centerVertical="true"
-                           android:layout_marginLeft="10dp"
-                           android:src="@drawable/diamond_emoji_black"/>
+                <!--<ImageView android:id="@+id/imageButton1"-->
+                           <!--android:layout_width="35dp"-->
+                           <!--android:layout_height="35dp"-->
+                           <!--android:layout_alignParentLeft="true"-->
+                           <!--android:layout_centerVertical="true"-->
+                           <!--android:layout_marginLeft="10dp"-->
+                           <!--android:src="@drawable/diamond_emoji_black"/>-->
 
                 <TextView android:id="@+id/textButton1"
                           android:layout_width="wrap_content"
@@ -70,13 +70,13 @@
                             android:focusable="true"
                             android:background="@drawable/rounded_button">
 
-                <ImageView android:id="@+id/imageButton2"
-                           android:layout_width="35dp"
-                           android:layout_height="35dp"
-                           android:layout_alignParentLeft="true"
-                           android:layout_centerVertical="true"
-                           android:layout_marginLeft="10dp"
-                           android:src="@drawable/diamond_emoji_black"/>
+                <!--<ImageView android:id="@+id/imageButton2"-->
+                           <!--android:layout_width="35dp"-->
+                           <!--android:layout_height="35dp"-->
+                           <!--android:layout_alignParentLeft="true"-->
+                           <!--android:layout_centerVertical="true"-->
+                           <!--android:layout_marginLeft="10dp"-->
+                           <!--android:src="@drawable/diamond_emoji_black"/>-->
 
                 <TextView android:id="@+id/textButton2"
                           android:layout_width="wrap_content"
@@ -103,13 +103,13 @@
                             android:focusable="true"
                             android:background="@drawable/rounded_button">
 
-                <ImageView android:id="@+id/imageButton3"
-                           android:layout_width="35dp"
-                           android:layout_height="35dp"
-                           android:layout_alignParentLeft="true"
-                           android:layout_centerVertical="true"
-                           android:layout_marginLeft="10dp"
-                           android:src="@drawable/diamond_emoji_black"/>
+                <!--<ImageView android:id="@+id/imageButton3"-->
+                           <!--android:layout_width="35dp"-->
+                           <!--android:layout_height="35dp"-->
+                           <!--android:layout_alignParentLeft="true"-->
+                           <!--android:layout_centerVertical="true"-->
+                           <!--android:layout_marginLeft="10dp"-->
+                           <!--android:src="@drawable/diamond_emoji_black"/>-->
 
                 <TextView android:id="@+id/textButton3"
                           android:layout_width="wrap_content"
@@ -131,13 +131,13 @@
                             android:focusable="true"
                             android:background="@drawable/rounded_button">
 
-                <ImageView android:id="@+id/imageButton4"
-                           android:layout_width="35dp"
-                           android:layout_height="35dp"
-                           android:layout_alignParentLeft="true"
-                           android:layout_centerVertical="true"
-                           android:layout_marginLeft="10dp"
-                           android:src="@drawable/diamond_emoji_black"/>
+                <!--<ImageView android:id="@+id/imageButton4"-->
+                           <!--android:layout_width="35dp"-->
+                           <!--android:layout_height="35dp"-->
+                           <!--android:layout_alignParentLeft="true"-->
+                           <!--android:layout_centerVertical="true"-->
+                           <!--android:layout_marginLeft="10dp"-->
+                           <!--android:src="@drawable/diamond_emoji_black"/>-->
 
                 <TextView android:id="@+id/textButton4"
                           android:layout_width="wrap_content"
@@ -164,13 +164,13 @@
                             android:focusable="true"
                             android:background="@drawable/rounded_button">
 
-                <ImageView android:id="@+id/imageButton5"
-                           android:layout_width="35dp"
-                           android:layout_height="35dp"
-                           android:layout_alignParentLeft="true"
-                           android:layout_centerVertical="true"
-                           android:layout_marginLeft="10dp"
-                           android:src="@drawable/diamond_emoji_black"/>
+                <!--<ImageView android:id="@+id/imageButton5"-->
+                           <!--android:layout_width="35dp"-->
+                           <!--android:layout_height="35dp"-->
+                           <!--android:layout_alignParentLeft="true"-->
+                           <!--android:layout_centerVertical="true"-->
+                           <!--android:layout_marginLeft="10dp"-->
+                           <!--android:src="@drawable/diamond_emoji_black"/>-->
 
                 <TextView android:id="@+id/textButton5"
                           android:layout_width="wrap_content"
@@ -192,13 +192,13 @@
                             android:focusable="true"
                             android:background="@drawable/rounded_button">
 
-                <ImageView android:id="@+id/imageButton6"
-                           android:layout_width="35dp"
-                           android:layout_height="35dp"
-                           android:layout_alignParentLeft="true"
-                           android:layout_centerVertical="true"
-                           android:layout_marginLeft="10dp"
-                           android:src="@drawable/diamond_emoji_black"/>
+                <!--<ImageView android:id="@+id/imageButton6"-->
+                           <!--android:layout_width="35dp"-->
+                           <!--android:layout_height="35dp"-->
+                           <!--android:layout_alignParentLeft="true"-->
+                           <!--android:layout_centerVertical="true"-->
+                           <!--android:layout_marginLeft="10dp"-->
+                           <!--android:src="@drawable/diamond_emoji_black"/>-->
 
                 <TextView android:id="@+id/textButton6"
                           android:layout_width="wrap_content"
@@ -225,13 +225,13 @@
                             android:focusable="true"
                             android:background="@drawable/rounded_button">
 
-                <ImageView android:id="@+id/imageButton7"
-                           android:layout_width="35dp"
-                           android:layout_height="35dp"
-                           android:layout_alignParentLeft="true"
-                           android:layout_centerVertical="true"
-                           android:layout_marginLeft="10dp"
-                           android:src="@drawable/diamond_emoji_black"/>
+                <!--<ImageView android:id="@+id/imageButton7"-->
+                           <!--android:layout_width="35dp"-->
+                           <!--android:layout_height="35dp"-->
+                           <!--android:layout_alignParentLeft="true"-->
+                           <!--android:layout_centerVertical="true"-->
+                           <!--android:layout_marginLeft="10dp"-->
+                           <!--android:src="@drawable/diamond_emoji_black"/>-->
 
                 <TextView android:id="@+id/textButton7"
                           android:layout_width="wrap_content"
@@ -253,13 +253,13 @@
                             android:focusable="true"
                             android:background="@drawable/rounded_button">
 
-                <ImageView android:id="@+id/imageButton8"
-                           android:layout_width="35dp"
-                           android:layout_height="35dp"
-                           android:layout_alignParentLeft="true"
-                           android:layout_centerVertical="true"
-                           android:layout_marginLeft="10dp"
-                           android:src="@drawable/diamond_emoji_black"/>
+                <!--<ImageView android:id="@+id/imageButton8"-->
+                           <!--android:layout_width="35dp"-->
+                           <!--android:layout_height="35dp"-->
+                           <!--android:layout_alignParentLeft="true"-->
+                           <!--android:layout_centerVertical="true"-->
+                           <!--android:layout_marginLeft="10dp"-->
+                           <!--android:src="@drawable/diamond_emoji_black"/>-->
 
                 <TextView android:id="@+id/textButton8"
                           android:layout_width="wrap_content"
@@ -286,13 +286,13 @@
                             android:focusable="true"
                             android:background="@drawable/rounded_button">
 
-                <ImageView android:id="@+id/imageButton9"
-                           android:layout_width="35dp"
-                           android:layout_height="35dp"
-                           android:layout_alignParentLeft="true"
-                           android:layout_centerVertical="true"
-                           android:layout_marginLeft="10dp"
-                           android:src="@drawable/diamond_emoji_black"/>
+                <!--<ImageView android:id="@+id/imageButton9"-->
+                           <!--android:layout_width="35dp"-->
+                           <!--android:layout_height="35dp"-->
+                           <!--android:layout_alignParentLeft="true"-->
+                           <!--android:layout_centerVertical="true"-->
+                           <!--android:layout_marginLeft="10dp"-->
+                           <!--android:src="@drawable/diamond_emoji_black"/>-->
 
                 <TextView android:id="@+id/textButton9"
                           android:layout_width="wrap_content"
@@ -314,13 +314,13 @@
                             android:focusable="true"
                             android:background="@drawable/rounded_button">
 
-                <ImageView android:id="@+id/imageButton10"
-                           android:layout_width="35dp"
-                           android:layout_height="35dp"
-                           android:layout_alignParentLeft="true"
-                           android:layout_centerVertical="true"
-                           android:layout_marginLeft="10dp"
-                           android:src="@drawable/diamond_emoji_black"/>
+                <!--<ImageView android:id="@+id/imageButton10"-->
+                           <!--android:layout_width="35dp"-->
+                           <!--android:layout_height="35dp"-->
+                           <!--android:layout_alignParentLeft="true"-->
+                           <!--android:layout_centerVertical="true"-->
+                           <!--android:layout_marginLeft="10dp"-->
+                           <!--android:src="@drawable/diamond_emoji_black"/>-->
 
                 <TextView android:id="@+id/textButton10"
                           android:layout_width="wrap_content"

@@ -1,7 +1,6 @@
 package diegowendel.github.io.cyberkids
 
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.ViewGroup
@@ -21,13 +20,13 @@ class SelecaoTabuadaActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        buttons.forEach { button ->
-            val tabuada = (button.getChildAt(1) as TextView).text.toString().toInt()
-            val isConcluido = PreferenceUtils.getBoolean(this,"tabuada-${tabuada}")
-            if (isConcluido) {
-                (button.getChildAt(0) as ImageView).setImageResource(R.drawable.diamond_emoji)
-            }
-        }
+//        buttons.forEach { button ->
+//            val tabuada = (button.getChildAt(1) as TextView).text.toString().toInt()
+//            val isConcluido = PreferenceUtils.getBoolean(this,"tabuada-${tabuada}")
+//            if (isConcluido) {
+//                (button.getChildAt(0) as ImageView).setImageResource(R.drawable.diamond_emoji)
+//            }
+//        }
     }
 
     fun setupComponents() {
@@ -43,11 +42,12 @@ class SelecaoTabuadaActivity : AppCompatActivity() {
             findViewById(R.id.button10))
 
         buttons.forEach { button ->
-            val tabuada = (button.getChildAt(1) as TextView).text.toString().toInt()
-            val isConcluido = PreferenceUtils.getBoolean(this,"tabuada-${tabuada}")
-            if (isConcluido) {
-                (button.getChildAt(0) as ImageView).setImageResource(R.drawable.diamond_emoji)
-            }
+            // val tabuada = (button.getChildAt(1) as TextView).text.toString().toInt()
+            // val isConcluido = PreferenceUtils.getBoolean(this,"tabuada-${tabuada}")
+            // if (isConcluido) {
+            //     (button.getChildAt(0) as ImageView).setImageResource(R.drawable.diamond_emoji)
+            // }
+            val tabuada = (button.getChildAt(0) as TextView).text.toString().toInt()
             button.setOnClickListener{ onClickButtonSelecao(tabuada) }
         }
     }
