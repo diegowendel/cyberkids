@@ -8,7 +8,7 @@ Tela de seleção|Tabuada completa|Fim de jogo
 
 O aplicativo desenvolvido se encontra disponível para download no Google Play.
 
-<a href="https://play.google.com/store/">
+<a href="https://play.google.com/store/apps/details?id=diegowendel.github.io.cyberkids">
     <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
         alt="Get it on Google Play" height="80"/>
 </a>
