@@ -16,7 +16,7 @@
                   android:layout_height="wrap_content"
                   android:text="Acabaram as chances!"
                   android:textColor="@color/white"
-                  android:textSize="28sp"
+                  android:textSize="20sp"
                   android:layout_gravity="center"
                   android:layout_margin="20dp"/>
 
