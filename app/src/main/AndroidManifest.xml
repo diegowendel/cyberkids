@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="diegowendel.github.io.cyberkids">
+        package="diegowendel.github.io.cyberkids">
 
     <application
             android:allowBackup="true"
@@ -8,18 +8,27 @@
             android:label="@string/app_name"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-
         <activity android:name=".SelecaoTabuadaActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".TabuadaActivity"
-                  android:parentActivityName=".SelecaoTabuadaActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                       android:value=".SelecaoTabuadaActivity"/>
+        <activity
+                android:name=".TabuadaActivity"
+                android:parentActivityName=".SelecaoTabuadaActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".SelecaoTabuadaActivity" />
+        </activity>
+        <activity
+                android:name=".PoliticaPrivacidadeActivity"
+                android:parentActivityName=".SelecaoTabuadaActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".SelecaoTabuadaActivity" />
         </activity>
     </application>
+
 </manifest>

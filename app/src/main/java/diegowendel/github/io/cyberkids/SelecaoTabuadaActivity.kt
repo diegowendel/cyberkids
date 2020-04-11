@@ -3,6 +3,8 @@ package diegowendel.github.io.cyberkids
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.Menu
+import android.view.MenuItem
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
@@ -50,6 +52,26 @@ class SelecaoTabuadaActivity : AppCompatActivity() {
             val tabuada = (button.getChildAt(0) as TextView).text.toString().toInt()
             button.setOnClickListener{ onClickButtonSelecao(tabuada) }
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId) {
+            R.id.action_privacy_policy -> {
+                openPrivacyPolicy()
+                true
+            }
+            else ->super.onOptionsItemSelected(item)
+        }
+    }
+
+    fun openPrivacyPolicy() {
+        val intent = Intent(this, PoliticaPrivacidadeActivity::class.java)
+        startActivity(intent)
     }
 
     fun onClickButtonSelecao(tabuada: Int) {

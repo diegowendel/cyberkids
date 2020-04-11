@@ -1,12 +1,12 @@
 # cyberkids
 
-É um jogo simples da operação matemática de multiplicação, que busca utilizar a tecnologia para auxiliar no entendimento da multiplicação além da tradicional tabuada em papel. Tem como objetivo estimular e desenvolver o raciocínio lógico matemático das crianças de forma intuitiva.
+Cyberkids is a simple game for children to learn the multiplication table. The app was developed together with pedagogy students who needed to present a project that could relate technology with teaching for kids.
 
-Tela de seleção|Tabuada completa|Fim de jogo
+Selection Page|Multiplication Table Page|Game Over
 :-------------------------:|:-------------------------:|:-------------------------:
 ![screenshot_1](docs/screenshot_1.png)|![screenshot_2](docs/screenshot_2.png)|![screenshot_3](docs/screenshot_3.png)
 
-O aplicativo desenvolvido se encontra disponível para download no Google Play.
+The app is available for download at Google Play (Only in Brazil).
 
 <a href="https://play.google.com/store/apps/details?id=diegowendel.github.io.cyberkids">
     <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
