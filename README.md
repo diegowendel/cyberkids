@@ -8,7 +8,7 @@ Selection Page|Multiplication Table Page|Game Over
 
 The app is available for download at Google Play (Only in Brazil).
 
-<a href="https://play.google.com/store/apps/details?id=diegowendel.github.io.cyberkids">
+<a href="https://play.google.com/store/apps/details?id=br.com.diegowendel.cyberkids">
     <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
         alt="Get it on Google Play" height="80"/>
 </a>
